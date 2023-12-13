@@ -1,0 +1,145 @@
+/* 背景設定 */
+body{
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* header設定 */
+header{
+  width: 1100px;
+  background-color: #ECF2F7;
+  border: none;
+  border-radius: 40px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.logo-container{
+  cursor: pointer;
+}
+.logo{
+  width: 80px;
+
+}
+
+.navbar ul,.activity ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+
+  
+}
+
+.navbar ul li a{
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  margin:0 14px;
+  text-decoration: none;
+}
+.navbar ul li a:hover{
+  background-color: #1048D8;
+  color: white;
+  padding: 7px 14px;
+  margin: 0;
+  border-radius: 20px;
+
+}
+
+.activity ul li a{
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+ }
+ .activity ul li a:hover{
+  text-decoration: underline;
+ }
+/* main */
+.option-container{
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-size: 18px;
+  
+
+}
+.option-container input,.option-container select{
+  font-size: 18px;
+  margin-right: 10px;
+}
+.divider{
+  width: 1000px;
+  height: 2px;
+  background-color: gray;
+  margin: 20px auto;
+}
+/* 商品選項 */
+.item-anchor{
+  text-decoration: none;
+  color: black;
+}
+.shopping-option-container{
+  width: 1000px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.shopping-item-container{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 40px;
+ 
+  
+}
+.shopping-item-container:hover img{
+  scale: 1.2;
+  object-position: top;
+  transform: translateY(-22px);
+}
+.shopping-item-container img{
+  width: 300px;
+  height: 220px;
+  margin-bottom: 0;
+  
+}
+
+.option-inner-container{
+  background-color: #ECF2F7;
+  margin-top: -5px;
+  padding-top: 14px;
+  line-height: .8;
+  padding-left: 15px;
+  padding-bottom: 20px; 
+}
+.option-inner-container button{
+  background-color: #1048D8;
+  border: none;
+  padding: 7px 14px;
+  color: white;
+  cursor: pointer;
+}
+.option-inner-container button:hover{
+  background-color: #262F7E;
+}
+
+/* footer */
+  footer{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #262F7E;
+    color: white;
+    padding: 6px 25px;
+  }

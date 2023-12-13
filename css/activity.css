@@ -1,0 +1,253 @@
+/* 背景設定 */
+body{
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* header設定 */
+header{
+  width: 1100px;
+  background-color: #ECF2F7;
+  border: none;
+  border-radius: 40px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.logo-container{
+  cursor: pointer;
+}
+.logo{
+  width: 80px;
+
+}
+
+.navbar ul,.activity ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+
+  
+}
+
+.navbar ul li a{
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  margin:0 14px;
+  text-decoration: none;
+}
+.navbar ul li a:hover{
+  background-color: #1048D8;
+  color: white;
+  padding: 7px 14px;
+  margin: 0;
+  border-radius: 20px;
+
+}
+
+.activity ul li a{
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+ }
+ .activity ul li a:hover{
+  text-decoration: underline;
+ }
+/* main */
+.activity-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 60px;
+ 
+}
+.activity-list a{
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #1048D8;
+  margin: 0 20px;
+}
+.activity-list a:hover{
+  color: #262F7E;
+}
+/* 最新消息 */
+.new-information-container{
+  width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  right: 0;
+  left: 0;
+}
+.new-information-big{
+  width: 50%;
+  line-height: .5;
+  cursor: pointer;
+
+
+
+}
+.new-information-big:hover{
+  filter: brightness(.7);
+
+}
+
+.new-information-big img{
+  width: 90%;
+  height: 300px;
+}
+
+.new-information-column{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.new-information-small{  
+  line-height: .5;
+  text-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer; 
+  transition: all 25ms;
+}
+.new-information-small:hover{
+  filter: brightness(.7);
+
+}
+.new-information-small img{
+  margin-right: 20px;
+  width: 40%;
+}
+.new-information-small p{
+  line-height: 1;
+}
+/* 分隔線 */
+.divider{
+  width: 1200px;
+  height: 2px;
+  background-color: gray;
+  margin: 30px auto;
+}
+/* 人文藝術 */
+.culture-title{
+  width: 1050px;
+  margin: 10px auto;
+}
+.culture-container{
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px auto;
+}
+.culture-inner-container{
+  width: 300px;
+  line-height: .5;
+  cursor: pointer;
+  margin-top: 60px;
+  transition: all 25ms;
+}
+.culture-inner-container:hover{
+  filter: brightness(.7);
+}
+.culture-inner-container p{
+  width: 300px;
+  line-height: 1.2;
+}
+.culture-inner-container img{
+  width: 300px;
+
+}
+/* 戶外活動&親子活動 */
+
+.third-container{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/* 標題 */
+.third-container-title{
+  width: 400px;
+  margin: 30px auto;
+}
+/* 戶外活動 */
+.outdoor-outside-container{
+  width: 400px;
+}
+.outdoor-inner-container{
+  line-height: .5;
+  margin-bottom: 60px;
+  cursor: pointer;
+  transition: all 25ms;
+}
+.outdoor-inner-container:hover{
+  filter: brightness(.7);
+}
+.outdoor-inner-container p{
+  line-height: 1;
+}
+.outdoor-inner-container img{
+  width: 400px;
+}
+/* 直分隔線 */
+.divider-column{
+  height: 600px;
+  width: 2px;
+  background-color:gray;
+  margin-top: -30px;
+}
+/* 親子活動 */
+.kids-outside-container{
+  width: 400px;
+
+}
+.kids-inner-container{
+  line-height: .5;
+  margin-bottom: 60px;
+  cursor: pointer;
+  transition: all 25ms;
+}
+.kids-inner-container:hover{
+  filter: brightness(.7);
+}
+.kids-inner-container p{
+  line-height: 1;
+}
+.kids-inner-container img{
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+
+
+
+
+
+  /* footer */
+  footer{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #262F7E;
+    color: white;
+    padding: 6px 25px;
+  }
