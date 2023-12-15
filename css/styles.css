@@ -8,7 +8,7 @@ body{
 
 }
 .container{
-  --bg-image:url('/image/首頁/首頁圖片.jpeg');
+  --bg-image:url('../image/index/indexpic.jpeg');
   --bg-image-filter:opacity(.8) brightness(.8); 
   object-position: bottom;
   width: 1200px;
