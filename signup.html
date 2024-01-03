@@ -14,43 +14,106 @@
     <div class="logo-container">
       <a href="index.html"><img class="logo" src="logo/logo horizontal.svg" alt=""></a>
    </div>
-      <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container2"><img class="logo" src="logo/white logo.svg" alt=""></div>
+        <div class="navbar">
+          <ul>
+            <li><a href="activity.html">活動情報</a></li>
+            <li><a href="popular location.html">熱門景點</a></li>
+            <li><a href="transportation.html">交通資訊</a></li>
+            <li><a href="shopping.html">購物頁面</a></li>
+            <li><a href="membership.html">會員頁面</a></li>
+          </ul>
+      </div>
+      <div class="activity">
         <ul>
-          <li><a href="activity.html">活動情報</a></li>
-          <li><a href="popular location.html">熱門景點</a></li>
-          <li><a href="transportation.html">交通資訊</a></li>
-          <li><a href="shopping.html">購物頁面</a></li>
-          <li><a href="membership.html">會員頁面</a></li>
+          <li><a href="shopping cart.html">購物車</a></li>
+          <li><a href="login.html">註冊/登入</a></li>
         </ul>
+      </div>
     </div>
-    <div class="activity">
-      <ul>
-        <li><a href="shopping cart.html">購物車</a></li>
-        <li><a href="login.html">註冊/登入</a></li>
-      </ul>
-    </div>
+    <div class="menu-container"> <i class="fa-solid fa-bars" id="menu-icon"></i></div>
   </header>
   <main>
    <div class="signup-container">
-    <div class="signup-inner-container">
-      <h3>會員註冊</h3>
-      <label for="username">姓名</label>
-      <input type="text" placeholder="輸入姓名" id="username" name="username" required>
-      <label for="useraccount">會員帳號</label>
-      <input type="text" placeholder="輸入會員帳號" id="useraccount" name="useraccount" required>
-      <label for="email">電子郵件</label>
-      <input type="email" placeholder="輸入Email" id="email" name="email">
-      <label for="password">會員密碼</label>
-      <input type="text" placeholder="輸入密碼" id="password" name="password" required>
-      <label for="confirm-password">確認密碼</label>
-      <input type="text" placeholder="輸入密碼" id="confirm-password" name="confirm-password" required>
-      <button type="submit" value="submit">註冊</button>
+     <!-- 卡片 -->
+     <div class="card">
+      <h3>新用戶註冊</h3>
+      <form class="form">
+        <div data-prop="username" class="form-item">
+          <input name="username" type="text" placeholder="輸入用戶名稱">
+          <span class="msg"></span>
+        </div>
+        <div data-prop="phone" class="form-item">
+          <input name="phone" type="text" placeholder="輸入手機號碼">
+          <span class="msg"></span>
+        </div>
+        <div data-prop="code" class="form-item">
+          <input name="code" type="text" placeholder="簡訊驗證碼">
+          <span class="msg"></span>
+          <a class="code" href="javascript:;">發送驗證碼</a>
+        </div>
+        <div data-prop="password" class="form-item">
+          <input name="password" type="password" placeholder="請設置6到20位數">
+          <span class="msg"></span>
+        </div>
+        <div data-prop="confirm" class="form-item">
+          <input name="confirm" type="password" placeholder="驗證密碼">
+          <span class="msg"></span>
+        </div>
+        <div class="item pl50">
+          <input type="checkbox" name="regulation" id="regulation">
+          已閱讀並同意《用戶服務協議》
+        </div>
+        <div class="form-item">
+          <button class="submit">下一步</button>
+        </div>
+      </form>
     </div>
    </div>
   </main>
   <footer>
-    <h3>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</h3>
+    <div class="footer">
+      <div class="darkblue">
+        <div class="inner-container">
+          <img class="logo" src="logo/white logo.svg"  alt="">
+          <div class="link-list-container">
+            <div class="link-list">
+              <ul>
+                <li class="bold">關於</li>
+                <li><a href="">關於我們</a></li>
+                <li><a href="">最新消息</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+              <ul>
+                <li class="bold">購買</li>
+                <li><a href="">購物頁面</a></li>
+                <li><a href="">購物車</a></li>
+                <li><a href="">退換貨說明</a></li>
+              </ul>
+              <ul>
+                <li class="bold">支援</li>
+                <li><a href="">帳號管理</a></li>
+                <li><a href="">會員中心</a></li>
+                <li><a href="">聯絡我們</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="icon-container">
+            <h3>contact us:</h3>
+            <div class="icon">
+              <i class="fa-brands fa-facebook fa-xl"></i>
+              <i class="fa-brands fa-instagram fa-xl"></i>
+              <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+              <i class="fa-brands fa-tiktok fa-xl"></i>
+          </div>
+          </div>
+      </div>
+      </div>
+     
+    <h3 class="disclaimer">本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</h3>
   </footer>
   <script src="https://kit.fontawesome.com/185f0599f8.js" crossorigin="anonymous"></script>
+  <script src="js/signup.js"></script>
 </body>
 </html>

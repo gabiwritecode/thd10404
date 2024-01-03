@@ -7,17 +7,23 @@ body{
   padding: 0;
 
 }
+/* 小header */
+.hidden-header{
+  transform: translateY(-600px);
+}
 .container{
   --bg-image:url('../image/index/indexpic.jpeg');
   --bg-image-filter:opacity(.8) brightness(.8); 
   object-position: bottom;
-  width: 1200px;
-  height: 560px;
+  width: 90%;
+  height: 90vh;
   margin: 20px auto;
   object-fit: contain;
-  border-radius: 50px;
+  border-radius: 30px;
   position: relative;
   isolation: isolate;
+
+
   
   
   
@@ -28,23 +34,25 @@ body{
   position: absolute;
   inset: 0;
   z-index: -1;
-  border-radius: 50px;
+  border-radius: 30px;
   background-image:var(--bg-image);
   filter: var(--bg-image-filter);
 }
 /* header-container上排設定 */
 .upperHeader{
+
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 30px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-top: 24px;
+  padding-left: 5em;
+  padding-right: 5em;
+
 }
 .logo{
   width: 120px;
   cursor: pointer;
+  padding-left: 1.2em;
 }
 /* navbar設定 */
 .navbar ul{
@@ -53,6 +61,8 @@ display: inline-block;
 display: flex;
 flex-direction: row;
 list-style-type: none;
+
+
   
 }
 
@@ -60,16 +70,23 @@ list-style-type: none;
   text-decoration: none;
   color: black;
   font-weight: 600;
-  font-size: 18px;
-  margin:0 14px;
+  font-size: 1.2rem;
+  margin:0 0.7em;
 
 }
 .navbar ul li a:hover{
   background-color: #1048D8;
   color: white;
-  padding: 7px 14px;
+  padding: .3em .7em;
   margin: 0;
   border-radius: 20px;
+
+}
+.activity{
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  
 
 }
 .activity ul{
@@ -77,27 +94,37 @@ list-style-type: none;
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .activity ul li a{
   color: black;
   margin: 0 10px;
   text-decoration: none;
+
  }
  .activity ul li a:hover{
+  color: #262F7E;
   text-decoration: underline;
  }
 /* header-container文字跟按鈕 */
 .header-content{
   margin-left: 50px;
-  margin-top: 160px;
+  margin-top: 100px;
 }
 .header-title{
   color: white;
+  font-size: 2.8rem;
+  text-shadow: 1px 2px 2px  #1048D8;
+
+ 
+  
 
 }
 .header-subtitle{
-  color:#073D8C
+  color:#073D8C;
+  font-size: 2rem;
 }
 .btn{
   color: white;
@@ -113,12 +140,20 @@ list-style-type: none;
   color: #1048D8;
   border:2px solid #1048D8;
 }
+/* menu漢堡 */
+.menu-container{
+  display: none;
+}
 /* 推薦列表 */
 .recommend-list-container{
-  width: 1200px;
+  width: 90%;
   margin: 20px auto;
   margin-top: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+.recommend-list-container h3{
+  padding-top: 20px;
+  display: block;
 }
 .recommend-list{
   
@@ -137,28 +172,93 @@ list-style-type: none;
   color: black;
 }
 .recommend-item:hover{
-  filter: brightness(80%);
+  filter: opacity(60%);
 }
 
 .recommend-item img{
-  width: 320px;
+  width: 80%;
   height: 330px;
+  margin-bottom: .2em;
   object-fit: cover;
   border-radius: 40px;
   
 }
 .recommend-item h3{
-  
-  margin-top: -5px;
   padding-left: 20px;
 }
 .recommend-item p{
-  margin-top: -10px;
+  margin-top: -20px;
   padding-left: 20px;
 }
+/* 天氣卡片 */
+.cards{
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+}
+.card{
+  
+  width: 24%;
+  max-width: 300px;
+  background: linear-gradient(135deg,#00f1fe,#5b548a);
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 10px 0px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  
+  
+}
+.js-weather-icon{
+  width: 40%;
+}
+
+.card .weather-icon{
+  width: 20px;
+  margin-top: -15px;
+}
+.weather h1{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: -15px;
+}
+.weather h2{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: -20px;
+}
+.col p{
+  font-size: .8rem;
+}
+.details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 50px;
+
+}
+.col{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.col img{
+  width: 40px;
+  margin-right: 10px;
+}
+.humidity, .wind{
+  font-size: 10px;
+  margin-top: -6px;
+}
+
+
+
 /* 熱門景點 */
 .popular-location-container{
-  width: 1200px;
+  width: 90%;
   margin: 0 auto;
   align-items: center;
   
@@ -170,8 +270,8 @@ list-style-type: none;
   justify-content: space-between;
 }
 .lightblue img{
-  padding: 60px 100px;
-  width: 600px;
+  padding: 3.2em 4em;
+  width: 60%;
 }
 .lightblue-text{
   margin-left: 100px;
@@ -183,22 +283,38 @@ list-style-type: none;
   list-style-type: none;
   color: white;
 }
-.darkblue{
+/* footer */
+.footer{
+  margin: 0 auto;
   background-color: #262F7E;
+  width: 90%;
+  color: white;
+}
+.darkblue{
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 60px;
+  padding: 2em;
+
+
 }
-.darkblue h3{
-  color: white;
+.darkblue .logo{
+  width: 200px;
+
+
 }
-.drakblue .social-media{
-  align-items: center;
+.darkblue .inner-container{
   display: flex;
   flex-direction: row;
-   border: 2px solid red;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.darkblue .icon-container{
+  text-wrap: nowrap;
+  margin-left: 20px;
 }
 i{
   color: white;
@@ -210,55 +326,346 @@ i{
   font-weight: bold;
   
 }
-.link-list-container{
-  width: 1200px;
-  margin-top: 60px;
-}
+
+
 .link-list{
   display: flex;
   flex-direction: row;
   justify-content: right;
   margin-right: 120px;
+  color: white;
   
 
 }
-.link-list ul{
-  margin-left: 40px;
 
-}
+
+
 .link-list ul li{
   margin-bottom: 15px;
   list-style-type: none;
+
   
 }
 .link-list ul li a{
   text-decoration: none;
-  color: black;
+  color: white;
+  
+  text-wrap: nowrap;
 }
 .link-list ul li a:hover{
   text-decoration:underline;
 }
 
-.link-list-container{
-  display: flex;
-  width: 1200px;
-  margin: 100px auto;
-  justify-content: space-evenly;
+.disclaimer{
+  padding: .3em .5em;
 }
-.link-list-container img{
-  width: 300px;
-  height: 260px;
-  object-fit: cover;
-  object-position: top;
-  display: inline-block;
+
+
+/* 響應式網站 */
+
+/* 視窗滾動的navbar */
+.scrolled{
+  display: none;
+}
+
+
+@media (max-width:1200px) {
+  .upperHeader{
+    padding-left: 10px;
+    padding-right: 0;
+  }
   
 }
-/* footer */
-footer{
-  width: 1200px;
-  margin: 0 auto;
-  background-color: #262F7E;
-  color: white;
-  padding: 6px 25px;
+@media (max-width:1000px){
+  .container{
+    height: 550px;
+  }
+  .upperHeader{
+    flex-direction: column;
+   
+   
+  }
+  .navbar ul{
+    
+    text-align: center;
+  }
+  .header-content{
+    margin-left: 0px;
+    margin-top: -30px;
+    text-align: center;
+    
+   
+  }
+  .activity{
+    margin-left: 600px;
+    margin-bottom: 200px;
+    
+  }
+  /* 推薦名單 */
+ 
+  .recommend-item img{
+    width: 240px;
+  }
+
+  /* 熱門景點 */
+  .lightblue{
+    flex-direction: column-reverse;
+    }
+  .lightblue img{
+    padding: 0;
+    margin: 2em auto;
+  }
+  .lightblue-text{
+    margin-left: 0;
+    margin-top: 0;
+    margin: 2em auto;
+    text-align: center;
+  }
+
+  /* link list */
+
+  .link-list ul{
+    margin-left: 0;
+  }
+  .link-list-container{
+    position: absolute;
+    top: 120px;
+    font-size: 1.2rem;
+
+  }
+  .darkblue .inner-container{
+    padding-bottom: 260px;
+    position: relative;
+  }
+ 
 }
+@media(max-width:960px){
+  /* header大小 */
+  .container{
+    height: 550px;
+  }
+  .upperHeader{
+    flex-direction: column;
+  }
+  .navbar ul{
+    flex-direction: column;
+    text-align: center;
+  }
+  .activity{
+    right: 50px;
+    text-wrap: nowrap;
+  }
+ .header-content{
+  margin-left: 0px;
+ }
+ /* 天氣卡片*/
+ .details{
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+ }
+
+ .col p{
+  font-size: 8px;
+ }
+  /*footer 浮起後往下放 */
+
+
+  .link-list{
+    position: absolute;
+  }
+
+}
+@media (max-width: 740px){
+  /* 大盒子navbar */
+  .container{
+    
+    position: fixed;
+    top: 20px;
+    z-index: 2;
+    left: 15px;
+
+  }
+ 
+  /* 漢堡包 */
+  .menu-container{
+    display: block;
+    float: right;
+    padding-right: 10px;
+    
+  }
+  #menu-icon{
+    filter: opacity(0);
+    color: white;
+    padding-right: 20px;
+    font-size: 2.2rem;
+    transform: translateY(-36px);
+  
+  }
+
+  
+ 
+  .recommend-list-container{
+    margin-top: 600px;
+  }
+  /* 選單 */
+  .upperHeader {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      position: absolute;
+      height: 100vh;
+      width: 60%;
+      background-color:#ECF2F7;
+      transform: translateX(-600px);
+      transition: all 500ms ease-in-out;
+
+      
+      
+  }
+
+
+
+  .navbar ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .navbar ul li {
+      margin: 5px 0;
+  }
+  .navbar ul li a{
+    color:#073D8C;
+  }
+
+  .activity{
+    top:90%;
+    right: 80px;
+
+  }
+  .activity ul {
+    padding-right: .5em;
+  }
+  .activity ul li a{
+    color:#073D8C;
+  }
+  .header-content{
+    margin-left: 0px;
+    padding-top: 60px;
+  }
+
+ 
+ /* 推薦列表 */
+ .recommend-list{
+  align-items: flex-start;
+ }
+ .recommend-item{
+  width: 20%;
+  filter: opacity(40%);
+ }
+ .recommend-item img{
+  width: 120px;
+ }
+ .recommend-item:hover{
+  width: 200px;
+  filter: opacity(100%);
+ }
+.recommend-item:hover img{
+  width: 200px;
+}
+
+/* 熱門景點 */
+.lightblue img{
+  width: 100%;
+  margin-top: 0;
+}
+.lightblue-text{
+  margin-top: 0px;
+}
+/* 天氣卡 */
+
+/* footer */
+ /* icon container */
+ .icon-container i{
+  margin: auto 4px;
+  
+
+}
+ }
+
+ @media(max-width:480px){
+  /* header */
+  .container{
+    width: 90%;
+    height: 400px;
+  }
+
+
+  .upperHeader{
+    width: 80%;
+  }
+  /* 推薦列表 */
+  .recommend-list{
+    justify-content: space-between;
+  }
+  .recommend-item{
+    filter: none;
+ 
+
+  }
+  .recommend-item h3{
+    width: 80px;
+    margin-left:-18px;
+    margin-top: -20px;
+
+    text-wrap: nowrap;
+
+  }
+  .recommend-item p{
+    width: 90px;
+    margin-left: -18px;
+    font-size: 12px;
+    
+  }
+  .recommend-item img{
+    width: 80px;
+    height: 80px;
+    filter: none;
+    
+  }
+  .recommend-item:hover{
+    width: 80px;
+  }
+  .recommend-item:hover img{
+    width: 80px;
+    height: 80px;
+    filter: none;
+    transform: translateX(0);
+  }
+  /* 天氣卡 */
+  .weather h1{
+    font-size: 1.2rem;
+  }
+  .weather h2{
+    font-size: 1rem;
+  }
+  /* footer */
+  
+  
+  .darkblue .logo{
+    width: 6em;
+  }
+  .icon-container i{
+    margin: auto 4px;
+    
+  }
+  .link-list ul li a{
+    font-size: 10px;
+  }
+  
+ }
+
+
 

@@ -86,192 +86,174 @@ header{
  .activity ul li a:hover{
   text-decoration: underline;
  }
-/* main */
-/* signup-container */
-
-.card {
-  width: 40%;
-  height: 700px;
-  background:#ECF2F7;
-  margin: 40px auto;
-  border-radius: 20px;
-  padding-left: 50px;
-  padding-top: 30px;
-
+/* main設定 */
+/* 動畫 */
+.container,
+.reverse {
+  opacity: 0; /* 初始為透明 */
+  animation: fadeIn 1s ease-out forwards; /* 使用fadeIn */
 }
 
-.card h3 {
-  font-size: 26px;
-  font-weight: normal;
-  color:#1048D8;
-  padding-left: 50px;
-  padding-bottom: 1em;
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* 初始為透明 */
+  }
+  to {
+    opacity: 1; /* 顯示 */
+  }
 }
-
-
-
-.form .form-item {
-  position: relative;
-  padding-bottom: 24px;
+.recommend-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5em;
+ 
 }
-
-.form .form-item .msg {
-  color: #ff4d4f;
-  position: absolute;
-  left: 2px;
-  bottom: 2px;
+.recommend-list a{
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #1048D8;
+  margin: 0 1.3em;
 }
-
-
-.form .form-item.pl50 {
-  padding-left: 40px;
-  cursor: pointer;
-}
-
-.form .form-item span.iconfont {
-  position: absolute;
-  left: 15px;
-  top: 13px;
+.recommend-list a:hover{
   color: #262F7E;
+}
+.recommend-list h3{
+  margin: 0 .13em;
+  color: #1048D8;
+  cursor:default;
+}
+
+.container{
+  width: 90% ;
+  display: flex;
+  flex-direction: row;
+  margin: 3.2em auto;
+  justify-content: space-evenly;
+  margin-bottom: 6em;
+}
+.reverse{
+  width: 90% ;
+  display: flex;
+  flex-direction: row;
+  margin: 3.2em auto;
+  justify-content: space-evenly;
+  margin-bottom: 6em;
+}
+.museum-text{
+  width: 40%;
+
+}
+.container img,.reverse img{
+  width: 40%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 30px;
+}
+.museum-text button{
+  padding: 7px 14px;
   font-size: 18px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.25s;
+  z-index: 0;
+}
+.museum-text button:hover{
+  background-color: black;
+  color: white;
+
 }
 
-.form .form-item i {
-  color: lightblue;
-  font-size: 14px;
+
+/* footer */
+.footer{
+  margin: 0 auto;
+  background-color: #262F7E;
+  width: 90%;
+  color: white;
+}
+.darkblue{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+
+
+}
+.darkblue .logo{
+  width: 10em;
+
+
+}
+.darkblue .inner-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
-.form .form-item input {
-  width: 65%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border: 1px solid #262F7E;
-  padding-left: 40px;
+.darkblue .icon-container{
+  text-wrap: nowrap;
+  margin-left: 20px;
 }
-
-.form .form-item.error input {
-  border-color: #ff4d4f;
-}
-
-.form .form-item input::placeholder {
-  color: #676fb0 !important;
-}
-
-.form .form-item .submit {
-  border: solid;
-  width: 80%;
-  height: 50px;
-  background:#1048D8;
-  border-radius: 4px;
-  display: block;
-  font-size: 16px;
-  color: #fff;
-  text-align: center;
-  line-height: 50px;
+.icon-container i{
+  color: white;
+  margin: auto 10px;
   cursor: pointer;
 }
-/* 驗證碼 */
-.code{
+/* 超連結及圖片 */
+.bold{
+  font-weight: bold;
+  
+}
+
+
+.link-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 120px;
+  color: white;
+  
+
+}
+
+
+
+.link-list ul li{
+  margin-bottom: 15px;
+  list-style-type: none;
+
+  
+}
+.link-list ul li a{
+  text-decoration: none;
+  color: white;
+  
   text-wrap: nowrap;
 }
-
-.form .form-item .code {
-  position: absolute;
-  left: 70%;
-  top: 16px;
-  width: 100px;
-  color:#1048D8;
-  text-align: right;
+.link-list ul li a:hover{
+  text-decoration:underline;
 }
 
-.form .form-item .code.ing {
-  color: #cccccc;
+.disclaimer{
+  padding: .3em .5em;
 }
+/* 響應式 */
 
 
-
-
-  /* footer */
-  .footer{
-    margin: 0 auto;
-    background-color: #262F7E;
-    width: 90%;
-    color: white;
-  }
-  .darkblue{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2em;
-  
-  
-  }
-  .darkblue .logo{
-    width: 200px;
-  
-  
-  }
-  .darkblue .inner-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-  
-  .darkblue .icon-container{
-    text-wrap: nowrap;
-    margin-left: 20px;
-  }
-  .icon-container i{
-    color: white;
-    margin: auto 10px;
-    cursor: pointer;
-  }
-  /* 超連結及圖片 */
-  .bold{
-    font-weight: bold;
-    
-  }
-  
-  
-  .link-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    margin-right: 120px;
-    color: white;
-    
-  
-  }
-  
-  
-  
-  .link-list ul li{
-    margin-bottom: 15px;
-    list-style-type: none;
-  
-    
-  }
-  .link-list ul li a{
-    text-decoration: none;
-    color: white;
-    
-    text-wrap: nowrap;
-  }
-  .link-list ul li a:hover{
-    text-decoration:underline;
-  }
-  
-  .disclaimer{
-    padding: .3em .5em;
-  }
-
-   /* 響應式 */
-
-
-   @media (max-width:1000px){
+  @media (max-width:1000px){
     /* header */
     header{
       padding:.1em .4em;
@@ -410,46 +392,51 @@ header{
       width: 100px;
     }
     /* main */
-    /* 卡片大小 */
-    .card{
-      width: 80%;
-    }
     main{
       margin-top: 160px;
     }
-    /* icon container */
-    .icon-container i{
-      margin: auto 4px;
-      
+    /* museum container */
+    .reverse{
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    .container{
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    .container img,.reverse img{
+      width: 60%;
+    }
+    .museum-text button{
 
+      text-wrap: nowrap;
     }
+  /* footer */
+   /* icon container */
+   .icon-container i{
+    margin: auto 4px;
     
-   }
-  @media(max-width:600px){
-    .form-item{
-      font-size: 8px;
-    }
-  
-    .card{
-      padding-left: 20px;
-    }
-    .card h3{
-      padding-left: 10px;
-    }
-    
-    .submit{
-      font-size: 10px;
-    }
+
   }
+
+   }
    @media(max-width:480px){
     /* header */
     header{
       width: 90%;
     }
 
-
+    .third-container{
+      transform: translateX(-40px);
+    }
     .navbar-container{
       width: 60%;
+    }
+    /* 內文 */
+    .museum-text{
+      width: 300px;
     }
     /* footer */
     .disclaimer{
@@ -476,3 +463,6 @@ header{
     }
    }
 
+    
+
+    

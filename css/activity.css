@@ -8,8 +8,18 @@ body{
   padding: 0;
 }
 /* header設定 */
+/* menu */
+.menu-container{
+  display: none;
+}
+#menu-icon{
+  color: #262F7E;
+  padding-right: 20px;
+  font-size: 2.2rem;
+
+}
 header{
-  width: 1100px;
+  width: 90%;
   background-color: #ECF2F7;
   border: none;
   border-radius: 40px;
@@ -20,6 +30,19 @@ header{
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
+  z-index: 2;
+}
+
+.navbar-container{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+
+ 
+}
+.logo-container2{
+  display: none;
 }
 .logo-container{
   cursor: pointer;
@@ -40,14 +63,15 @@ header{
 .navbar ul li a{
   color: black;
   font-weight: 600;
-  font-size: 18px;
-  margin:0 14px;
+  font-size: 1.2rem;
+  margin:0 .6em;
   text-decoration: none;
+  line-height: 1.6;
 }
 .navbar ul li a:hover{
   background-color: #1048D8;
   color: white;
-  padding: 7px 14px;
+  padding: .2em .6em;
   margin: 0;
   border-radius: 20px;
 
@@ -55,48 +79,51 @@ header{
 
 .activity ul li a{
   color: black;
-  margin: 0 10px;
+  margin: 0 .5em;
   text-decoration: none;
+  font-size: 1.2rem;
  }
  .activity ul li a:hover{
   text-decoration: underline;
  }
 /* main */
+/* 分類標籤 */
 .activity-list{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 1200px;
+  width: 90%;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 3em;
  
 }
 .activity-list a{
-  font-size: 20px;
+  font-size: 1.3rem;
   text-decoration: none;
   font-weight: bold;
   color: #1048D8;
-  margin: 0 20px;
+  margin: 0 1.2em;
 }
 .activity-list a:hover{
   color: #262F7E;
 }
 /* 最新消息 */
 .new-information-container{
-  width: 1200px;
-  margin: 20px auto;
+  width: 88%;
+  margin: 1.3em auto;
   display: flex;
   position: relative;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   right: 0;
   left: 0;
 }
 .new-information-big{
-  width: 50%;
-  line-height: .5;
+  width: 46%;
+  line-height: .8;
   cursor: pointer;
+
 
 
 
@@ -108,11 +135,11 @@ header{
 
 .new-information-big img{
   width: 90%;
-  height: 300px;
+  height: 80%;
 }
 
 .new-information-column{
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -125,6 +152,7 @@ header{
   flex-direction: row;
   cursor: pointer; 
   transition: all 25ms;
+  margin-bottom: .5em;
 }
 .new-information-small:hover{
   filter: brightness(.7);
@@ -133,24 +161,27 @@ header{
 .new-information-small img{
   margin-right: 20px;
   width: 40%;
+
+
+
 }
 .new-information-small p{
   line-height: 1;
 }
 /* 分隔線 */
 .divider{
-  width: 1200px;
+  width: 90%;
   height: 2px;
   background-color: gray;
   margin: 30px auto;
 }
 /* 人文藝術 */
 .culture-title{
-  width: 1050px;
+  width: 85%;
   margin: 10px auto;
 }
 .culture-container{
-  width: 1200px;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -177,7 +208,7 @@ header{
 /* 戶外活動&親子活動 */
 
 .third-container{
-  width: 1200px;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -185,16 +216,16 @@ header{
 }
 /* 標題 */
 .third-container-title{
-  width: 400px;
+  width: 24rem;
   margin: 30px auto;
 }
 /* 戶外活動 */
 .outdoor-outside-container{
-  width: 400px;
+  width: 40%;
 }
 .outdoor-inner-container{
   line-height: .5;
-  margin-bottom: 60px;
+  margin-bottom: 4em;
   cursor: pointer;
   transition: all 25ms;
 }
@@ -202,10 +233,10 @@ header{
   filter: brightness(.7);
 }
 .outdoor-inner-container p{
-  line-height: 1;
+  line-height: 1.2;
 }
 .outdoor-inner-container img{
-  width: 400px;
+  width: 18em;
 }
 /* 直分隔線 */
 .divider-column{
@@ -216,12 +247,12 @@ header{
 }
 /* 親子活動 */
 .kids-outside-container{
-  width: 400px;
+  width: 40%;
 
 }
 .kids-inner-container{
   line-height: .5;
-  margin-bottom: 60px;
+  margin-bottom: 4em;
   cursor: pointer;
   transition: all 25ms;
 }
@@ -232,8 +263,8 @@ header{
   line-height: 1;
 }
 .kids-inner-container img{
-  width: 400px;
-  height: 200px;
+  width: 18em;
+  height: 10em;
   object-fit: cover;
   object-position: top;
 }
@@ -244,10 +275,477 @@ header{
 
 
   /* footer */
-  footer{
-    width: 1200px;
-    margin: 0 auto;
-    background-color: #262F7E;
-    color: white;
-    padding: 6px 25px;
+.footer{
+  margin: 0 auto;
+  background-color: #262F7E;
+  width: 90%;
+  color: white;
+}
+.darkblue{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+
+
+}
+.darkblue .logo{
+  width: 200px;
+
+
+}
+.darkblue .inner-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.darkblue .icon-container{
+  text-wrap: nowrap;
+  margin-left: 20px;
+}
+.icon-container i{
+  color: white;
+  margin: auto 10px;
+  cursor: pointer;
+}
+/* 超連結及圖片 */
+.bold{
+  font-weight: bold;
+  
+}
+
+
+.link-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 120px;
+  color: white;
+  
+
+}
+
+
+
+.link-list ul li{
+  margin-bottom: 15px;
+  list-style-type: none;
+
+  
+}
+.link-list ul li a{
+  text-decoration: none;
+  color: white;
+  
+  text-wrap: nowrap;
+}
+.link-list ul li a:hover{
+  text-decoration:underline;
+}
+
+.disclaimer{
+  padding: .3em .5em;
+}
+
+/* 輪播圖 */
+
+.toggle {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  display: flex;
+}
+
+.toggle button {
+  margin-right: 12px;
+  width: 28px;
+  height: 28px;
+  appearance: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.slider-indicator {
+  margin: 0;
+  padding: 0;
+  padding-left: 60px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.slider-indicator li {
+  width: 8px;
+  height: 8px;
+  margin: 4px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.slider-indicator li.active {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+  /* 響應式 */
+  @media(max-width:1250px){
+    /* 最新消息 */
+    .new-information-big img{
+      height: auto;
+     }
+     .new-information-small{
+      margin-bottom: 1.4em;
+     }
+     .new-information-small img{
+      height: 120px;
+     }
+    .new-information-small h3{
+      line-height: 1.1;
+    }
   }
+
+  @media (max-width:1000px){
+    /* header */
+    header{
+      padding:.1em .4em;
+    }
+  
+    /* link list */
+
+    .link-list ul{
+      margin-left: 0;
+    }
+    .link-list-container{
+      position: absolute;
+      top: 120px;
+      font-size: 1.2rem;
+  
+    }
+    .darkblue .inner-container{
+      padding-bottom: 220px;
+      position: relative;
+    }
+   /* 最新消息 */
+   
+  }
+  @media(max-width:960px){
+
+
+    /* navbar */
+    
+    header{
+      display: flex;
+      flex-direction: column;
+    }
+    .logo{
+      width: 160px;
+      padding-top: 2em;
+    }
+    .navbar-container{
+      flex-direction: column;
+    }
+    .navbar ul{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .navbar ul li:hover a{
+      color: white;
+    }
+    
+    /* 最新消息 */
+    
+    .new-information-container{
+      width: 100%;
+      flex-direction: column;
+      padding: 0 0 0 0;
+      margin: 10px auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .new-information-big{
+      
+      width: 94%;
+    }
+    .new-information-column{
+      width: 88%;
+
+      flex-direction: row;
+    }
+
+    .new-information-small{
+    
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 0 0;
+    }
+    .text-container{
+      align-items: center;
+      text-align: center;
+    }
+    .new-information-small img{
+      width: 200px;
+
+    }
+    .new-information-small p{
+      width: 200px;
+    }
+
+    /* 人文藝術 */
+    .culture-inner-container p{
+      width: 200px;
+      line-height: 1.2;
+    }
+    .culture-inner-container img{
+      width: 200px;
+    
+    }
+    /* 戶外活動 */
+    /* 分隔線 */
+    .divider-column{
+      display: none;
+    }
+    /* footer link */
+    .link-list{
+      position: absolute;
+    }
+  }
+  @media (max-width: 740px){
+
+    /* navbar */
+    body{
+      position: relative;
+    }
+    
+    header{
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      top: 0;
+      height:5em;
+  
+     
+
+
+      
+    }
+    .menu-container{
+      display: block;
+    }
+    .navbar-container{
+      transform: translateX(-600px);
+      box-sizing: border-box;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      width: 80%;
+      height: 600px;
+      background-color:#262F7E;
+      z-index: 1;
+      padding-top: 0;
+      transition:all 500ms ease-in-out;
+      
+   
+    }
+    /* logo */
+
+    .logo-container{
+      padding-bottom: 1.2em;
+    }
+    
+    .logo-container2{
+      display: block;
+      display: flex;
+      margin: 0 auto;
+    }
+    .logo{
+      padding-left: 2em;
+    }
+    .navbar{
+
+      padding-left: -30px;
+
+    }
+  
+    .navbar ul li a{
+      color: white;
+      margin: 0 0;
+      padding: 0 0;
+    }
+    .navbar ul li:hover{
+      width: auto;
+    }
+
+    .navbar ul li:hover a{
+      color: white;
+    }
+    /* activity */
+    .activity ul li a{
+      color: white;
+    }
+    .activity{
+
+      display: flex;
+      margin: 0 auto;
+
+    }
+
+  /* logo大小 */
+    .logo{
+      width: 100px;
+    }
+  
+    /* 最新消息 */
+    .new-information-big{
+      margin-top: 60px;
+    }
+    .new-information-column{
+      flex-direction: column;
+      margin: 0 auto;
+      width: 600px;
+      justify-content: center;
+      padding-left: 30px;
+    }
+    .new-information-small{
+      width: 600px;
+      flex-direction: row;
+      margin-bottom: 1.2em;
+    }
+    .new-information-small img{
+      margin-top: .5em;
+      width: 240px;
+      height: 150px;
+    }
+    /* 人文藝術 */
+    .culture-container{
+      flex-direction: column;
+    }
+    .culture-inner-container img, .culture-inner-container p{
+      width: 320px;
+    }
+    .culture-inner-container{
+      width: 320px;
+      margin: 0 auto;
+    }
+    /* 戶外活動&親子活動 */
+    .third-container{
+      align-items: center;
+      flex-direction: column;
+      padding-right: 3em;
+    }
+    .third-container img{
+      transform: translateX(-20px);
+    }
+    .third-container-title{
+      transform: translateX(-20px);
+    }
+    .description{
+      transform: translateX(-20px);
+    }
+    .bold{
+      text-wrap: nowrap;
+    }
+    /* footer */
+     /* icon container */
+     .icon-container i{
+      margin: auto 4px;
+      
+
+    }
+    
+   }
+   @media(max-width:520px){
+    *{
+      box-sizing: border-box;
+    }
+    .activity-list{
+      margin-top: 140px;
+    }
+    .new-information-big{
+      width: 75%;
+      line-height: 1.3;
+    }
+    .new-information-small{
+      flex-direction: column;
+      align-items: center;
+      text-align:center;
+      margin-left: -100px;
+
+    }
+    .new-information-small img{
+      padding-left: 30px;
+    }
+    /* 戶外活動 */
+    .third-container-title{
+    padding-right: 70px;
+    
+     text-align: center;
+    }
+    .third-container{
+      transform: translateX(-60px);
+      width: 100%;
+      
+    }
+   }
+   @media(max-width:480px){
+    /* header */
+    header{
+      width: 90%;
+    }
+
+    .third-container{
+      transform: translateX(-40px);
+    }
+    .navbar-container{
+      width: 60%;
+    }
+    /* footer */
+    .disclaimer{
+      width: 400px;
+    }
+    .darkblue .logo{
+      width: 6em;
+    }
+    .icon-container i{
+      margin: auto 4px;
+      
+    }
+    .link-list ul li a{
+      font-size: 10px;
+    }
+    
+   }
+   @media(max-width:420px){
+    .new-information-column{
+      transform: translateX(-40px);
+    }
+    .new-information-small p{
+      line-height: 1.4;
+    }
+    .third-container p{
+      width: 280px;
+    }
+    /* footer */
+    .disclaimer{
+      font-size: 1rem;
+
+    }
+   }
+
+    

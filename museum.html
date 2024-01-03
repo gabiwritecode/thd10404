@@ -7,33 +7,37 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Noto+Sans+Thai:wght@100;200&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css">
+  <link rel="stylesheet" href="css/museum.css">
 </head>
 <body>
   <header>
     <div class="logo-container">
       <a href="index.html"><img class="logo" src="logo/logo horizontal.svg" alt=""></a>
    </div>
-      <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container2"><img class="logo" src="logo/white logo.svg" alt=""></div>
+        <div class="navbar">
+          <ul>
+            <li><a href="activity.html">活動情報</a></li>
+            <li><a href="popular location.html">熱門景點</a></li>
+            <li><a href="transportation.html">交通資訊</a></li>
+            <li><a href="shopping.html">購物頁面</a></li>
+            <li><a href="membership.html">會員頁面</a></li>
+          </ul>
+      </div>
+      <div class="activity">
         <ul>
-          <li><a href="activity.html">活動情報</a></li>
-          <li><a href="popular location.html">熱門景點</a></li>
-          <li><a href="transportation.html">交通資訊</a></li>
-          <li><a href="shopping.html">購物頁面</a></li>
-          <li><a href="membership.html">會員頁面</a></li>
+          <li><a href="shopping cart.html">購物車</a></li>
+          <li><a href="login.html">註冊/登入</a></li>
         </ul>
+      </div>
     </div>
-    <div class="activity">
-      <ul>
-        <li><a href="shopping cart.html">購物車</a></li>
-        <li><a href="login.html">註冊/登入</a></li>
-      </ul>
-    </div>
+    <div class="menu-container"> <i class="fa-solid fa-bars" id="menu-icon"></i></div>
   </header>
   <main>
     <div class="recommend-list"><a href="restaurant.html">熱門餐廳</a>|<a href="hotel.html">飯店推薦</a>|<a href="#">必訪博物館</a></div>
     
-    <div class="container">
+    <div class="reverse">
       <div class="museum-text">
         <h2>普拉多博物館</h2>
         <p>普拉多博物館（Museo del Prado）是位於西班牙馬德里的一座世界知名的美術館，是世界上最重要的藝術博物館之一。它成立於1819年，原先是為了展示西班牙皇室的藝術收藏而建立的。<br>
@@ -52,7 +56,7 @@
         <button>Learn more</button>
       </div>
     </div>
-    <div class="container">
+    <div class="reverse">
       <div class="museum-text">
         <h2>國家考古博物館</h2>
         <p>西班牙國家考古博物館是位於馬德里的一座博物館，致力於保存和展示西班牙豐富的考古學遺產。該博物館成立於1867年，擁有大量的考古學藏品，涵蓋了從史前時期到近代的不同時期。<br>
@@ -75,7 +79,47 @@
 
   </main>
   <footer>
-    <h3>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</h3>
+    <div class="footer">
+      <div class="darkblue">
+        <div class="inner-container">
+          <img class="logo" src="logo/white logo.svg"  alt="">
+          <div class="link-list-container">
+            <div class="link-list">
+              <ul>
+                <li class="bold">關於</li>
+                <li><a href="">關於我們</a></li>
+                <li><a href="">最新消息</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+              <ul>
+                <li class="bold">購買</li>
+                <li><a href="">購物頁面</a></li>
+                <li><a href="">購物車</a></li>
+                <li><a href="">退換貨說明</a></li>
+              </ul>
+              <ul>
+                <li class="bold">支援</li>
+                <li><a href="">帳號管理</a></li>
+                <li><a href="">會員中心</a></li>
+                <li><a href="">聯絡我們</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="icon-container">
+            <h3>contact us:</h3>
+            <div class="icon">
+              <i class="fa-brands fa-facebook fa-xl"></i>
+              <i class="fa-brands fa-instagram fa-xl"></i>
+              <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+              <i class="fa-brands fa-tiktok fa-xl"></i>
+          </div>
+          </div>
+      </div>
+      </div>
+     
+    <h3 class="disclaimer">本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</h3>
   </footer>
+  <script src="js/museum.js"></script>
+  <script src="https://kit.fontawesome.com/185f0599f8.js" crossorigin="anonymous"></script>
 </body>
 </html>

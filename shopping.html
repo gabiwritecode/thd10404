@@ -14,42 +14,51 @@
     <div class="logo-container">
       <a href="index.html"><img class="logo" src="logo/logo horizontal.svg" alt=""></a>
    </div>
-      <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container2"><img class="logo" src="logo/white logo.svg" alt=""></div>
+        <div class="navbar">
+          <ul>
+            <li><a href="activity.html">活動情報</a></li>
+            <li><a href="popular location.html">熱門景點</a></li>
+            <li><a href="transportation.html">交通資訊</a></li>
+            <li><a href="shopping.html">購物頁面</a></li>
+            <li><a href="membership.html">會員頁面</a></li>
+          </ul>
+      </div>
+      <div class="activity">
         <ul>
-          <li><a href="activity.html">活動情報</a></li>
-          <li><a href="popular location.html">熱門景點</a></li>
-          <li><a href="transportation.html">交通資訊</a></li>
-          <li><a href="shopping.html">購物頁面</a></li>
-          <li><a href="membership.html">會員頁面</a></li>
+          <li><a href="shopping cart.html">購物車</a></li>
+          <li><a href="login.html">註冊/登入</a></li>
         </ul>
+      </div>
     </div>
-    <div class="activity">
-      <ul>
-        <li><a href="shopping cart.html">購物車</a></li>
-        <li><a href="login.html">註冊/登入</a></li>
-      </ul>
-    </div>
+    <div class="menu-container"> <i class="fa-solid fa-bars" id="menu-icon"></i></div>
   </header>
   <main>
     <div class="option-container">
-      <label for="date">可預定日期</label>
-      <input type="date" name="date" value="date">
-      <label for="price">價格範圍</label>
-      <select name="order" id="order">
-        <option value="">請選擇</option>
-        <option value="low">1000元以下</option>
-        <option value="middle">1000~3000元</option>
-        <option value="high">3000元以上</option>
-      </select>
-
+      <div class="selector">
+        <label for="date">可預定日期 </label>
+        <input type="date" name="date" value="date">
+      </div>
+      <div class="selector">
+        <label for="price">價格範圍</label>
+        <select name="order" id="order">
+          <option value="">請選擇 </option>
+          <option value="low">1000元以下</option>
+          <option value="middle">1000~3000元</option>
+          <option value="high">3000元以上</option>
+        </select>
+      </div>
+      <div class="selector">
       <label for="order">排序方式</label>
       <select name="order" id="order">
-        <option value="">請選擇</option>
+        <option value="">請選擇 </option>
         <option value="popular">最熱門</option>
         <option value="newest">新上架</option>
         <option value="highest">最高價</option>
         <option value="lowest">最低價</option>
       </select>
+    </div>
     </div>
   <div class="divider"></div>
   <section class="shopping-option-container">
@@ -59,7 +68,7 @@
       <div class="option-inner-container">
         <p>一日遊</p>
         <h3>馬德里市區觀光一日遊</h3>
-        <p><i class="fa-regular fa-star"></i> 4.2</p>
+        <p><i class="fa-regular fa-star"></i> 4.3</p>
         <div class="price-container">
           <p>價格：<i class="fa-solid fa-dollar-sign"></i>1300</p><button>加入購物車</button>
         </div>
@@ -71,7 +80,7 @@
       <div class="option-inner-container">
         <p>一日遊</p>
         <h3>賽哥維亞一日遊(馬德里出發)</h3>
-        <p><i class="fa-regular fa-star"></i> 4.2</p>
+        <p><i class="fa-regular fa-star"></i> 4.8</p>
         <div class="price-container">
           <p>價格：<i class="fa-solid fa-dollar-sign"></i>1800</p><button>加入購物車</button>
         </div>
@@ -93,7 +102,7 @@
       <div class="option-inner-container">
         <p>一日遊</p>
         <h3>阿維拉一日遊(馬德里出發)</h3>
-        <p><i class="fa-regular fa-star"></i> 4.2</p>
+        <p><i class="fa-regular fa-star"></i> 4.1</p>
         <div class="price-container">
           <p>價格：<i class="fa-solid fa-dollar-sign"></i>1500</p><button>加入購物車</button>
         </div>
@@ -104,7 +113,7 @@
       <div class="option-inner-container">
         <p>一日遊</p>
         <h3>薩拉曼卡一日遊(馬德里出發)</h3>
-        <p><i class="fa-regular fa-star"></i> 4.2</p>
+        <p><i class="fa-regular fa-star"></i> 4.4</p>
         <div class="price-container">
           <p>價格：<i class="fa-solid fa-dollar-sign"></i>1200</p><button>加入購物車</button>
         </div>
@@ -115,7 +124,7 @@
       <div class="option-inner-container">
         <p>一日遊</p>
         <h3>昆卡一日遊(馬德里出發)</h3>
-        <p><i class="fa-regular fa-star"></i> 4.2</p>
+        <p><i class="fa-regular fa-star"></i> 4.6</p>
         <div class="price-container">
           <p>價格：<i class="fa-solid fa-dollar-sign"></i>1300</p><button>加入購物車</button>
         </div>
@@ -125,7 +134,45 @@
   </section>
   </main>
   <footer>
-    <h3>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</h3>
+    <div class="footer">
+      <div class="darkblue">
+        <div class="inner-container">
+          <img class="logo" src="logo/white logo.svg"  alt="">
+          <div class="link-list-container">
+            <div class="link-list">
+              <ul>
+                <li class="bold">關於</li>
+                <li><a href="">關於我們</a></li>
+                <li><a href="">最新消息</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+              <ul>
+                <li class="bold">購買</li>
+                <li><a href="">購物頁面</a></li>
+                <li><a href="">購物車</a></li>
+                <li><a href="">退換貨說明</a></li>
+              </ul>
+              <ul>
+                <li class="bold">支援</li>
+                <li><a href="">帳號管理</a></li>
+                <li><a href="">會員中心</a></li>
+                <li><a href="">聯絡我們</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="icon-container">
+            <h3>contact us:</h3>
+            <div class="icon">
+              <i class="fa-brands fa-facebook fa-xl"></i>
+              <i class="fa-brands fa-instagram fa-xl"></i>
+              <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+              <i class="fa-brands fa-tiktok fa-xl"></i>
+          </div>
+          </div>
+      </div>
+      </div>
+     
+    <h3 class="disclaimer">本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</h3>
   </footer>
   <script src="https://kit.fontawesome.com/185f0599f8.js" crossorigin="anonymous"></script>
 </body>

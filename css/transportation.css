@@ -8,8 +8,18 @@ body{
   padding: 0;
 }
 /* header設定 */
+/* menu */
+.menu-container{
+  display: none;
+}
+#menu-icon{
+  color: #262F7E;
+  padding-right: 20px;
+  font-size: 2.2rem;
+
+}
 header{
-  width: 1100px;
+  width: 90%;
   background-color: #ECF2F7;
   border: none;
   border-radius: 40px;
@@ -20,6 +30,19 @@ header{
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
+  z-index: 2;
+}
+
+.navbar-container{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+
+ 
+}
+.logo-container2{
+  display: none;
 }
 .logo-container{
   cursor: pointer;
@@ -40,14 +63,15 @@ header{
 .navbar ul li a{
   color: black;
   font-weight: 600;
-  font-size: 18px;
-  margin:0 14px;
+  font-size: 1.2rem;
+  margin:0 .6em;
   text-decoration: none;
+  line-height: 1.6;
 }
 .navbar ul li a:hover{
   background-color: #1048D8;
   color: white;
-  padding: 7px 14px;
+  padding: .2em .6em;
   margin: 0;
   border-radius: 20px;
 
@@ -55,8 +79,9 @@ header{
 
 .activity ul li a{
   color: black;
-  margin: 0 10px;
+  margin: 0 .5em;
   text-decoration: none;
+  font-size: 1.2rem;
  }
  .activity ul li a:hover{
   text-decoration: underline;
@@ -64,7 +89,7 @@ header{
  /* main */
  /* 地圖 */
  .madrid-map{
-  width: 1200px;
+  width: 80%;
   height: 600px;
   overflow: hidden;
   object-fit: cover;
@@ -76,7 +101,7 @@ header{
   
 }
 .map-description-container{
-  width: 1200px;
+  width: 80%;
   margin: 10px auto;
   display: flex;
   justify-content: right;
@@ -95,10 +120,11 @@ header{
   margin-bottom: 120px;
 }
 .text-container{
-  width: 1000px;
+  width: 70%;
   margin: 40px auto;
 }
 .text-container h3{
+  font-size: 1rem;
   line-height: 1.8;
 }
 .text-title{
@@ -110,7 +136,7 @@ header{
 }
 .transportation-picture{
   display: flex;
-  width: 800px;
+  width: 70%;
   height: 400px;
   margin: 0 auto;
  
@@ -119,10 +145,284 @@ header{
   object-fit: contain;
 }
 /* footer */
-footer{
-  width: 1200px;
+.footer{
   margin: 0 auto;
   background-color: #262F7E;
+  width: 90%;
   color: white;
-  padding: 6px 25px;
 }
+.darkblue{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+
+
+}
+.darkblue .logo{
+  width: 200px;
+
+
+}
+.darkblue .inner-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.darkblue .icon-container{
+  text-wrap: nowrap;
+  margin-left: 20px;
+}
+.icon-container i{
+  color: white;
+  margin: auto 10px;
+  cursor: pointer;
+}
+/* 超連結及圖片 */
+.bold{
+  font-weight: bold;
+  
+}
+
+
+.link-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 120px;
+  color: white;
+  
+
+}
+
+
+
+.link-list ul li{
+  margin-bottom: 15px;
+  list-style-type: none;
+
+  
+}
+.link-list ul li a{
+  text-decoration: none;
+  color: white;
+  
+  text-wrap: nowrap;
+}
+.link-list ul li a:hover{
+  text-decoration:underline;
+}
+
+.disclaimer{
+  padding: .3em .5em;
+}
+/* 響應式 */
+
+
+@media (max-width:1000px){
+  /* header */
+  header{
+    padding:.1em .4em;
+  }
+
+  /* link list */
+
+  .link-list ul{
+    margin-left: 0;
+  }
+  .link-list-container{
+    position: absolute;
+    top: 120px;
+    font-size: 1.2rem;
+
+  }
+  .darkblue .inner-container{
+    padding-bottom: 220px;
+    position: relative;
+  }
+ 
+}
+@media(max-width:960px){
+
+  /* navbar */
+  
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+  .logo{
+    width: 160px;
+    padding-top: 2em;
+  }
+  .navbar-container{
+    flex-direction: column;
+  }
+  .navbar ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar ul li:hover a{
+    color: white;
+  }
+  /* 內文 */
+  .madrid-map{
+    height: 400px;
+  }
+  .transportation-picture{
+    height: 300px;
+  }
+  
+  
+
+
+  /* footer link */
+  .link-list{
+    position: absolute;
+  }
+}
+@media (max-width: 740px){
+
+  /* navbar */
+  body{
+    position: relative;
+  }
+  
+  header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    height:5em;
+
+    
+  }
+  .menu-container{
+    display: block;
+  }
+  .navbar-container{
+    transform: translateX(-600px);
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 600px;
+    background-color:#262F7E;
+    z-index: 1;
+    padding-top: 0;
+    transition:all 500ms ease-in-out;
+    
+ 
+  }
+  /* logo */
+
+  .logo-container{
+    padding-bottom: 1.2em;
+  }
+  
+  .logo-container2{
+    display: block;
+    display: flex;
+    margin: 0 auto;
+  }
+  .logo{
+    padding-left: 2em;
+  }
+  .navbar{
+
+    padding-left: -30px;
+
+  }
+
+  .navbar ul li a{
+    color: white;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  .navbar ul li:hover{
+    width: auto;
+  }
+
+  .navbar ul li:hover a{
+    color: white;
+  }
+  /* activity */
+  .activity ul li a{
+    color: white;
+  }
+  .activity{
+
+    display: flex;
+    margin: 0 auto;
+
+  }
+
+/* logo大小 */
+  .logo{
+    width: 100px;
+  }
+  /* main */
+  main{
+    margin-top: 160px;
+  }
+   /* 圖片大小 */
+   .madrid-map{
+    height: 300px;
+   }
+   .transportation-picture{
+    height: 160px;
+   }
+   /* footer */
+   /* icon container */
+   .icon-container i{
+    margin: auto 4px;
+    
+
+  }
+  
+ }
+
+ 
+ @media(max-width:480px){
+  /* header */
+  header{
+    width: 90%;
+  }
+
+
+  .navbar-container{
+    width: 60%;
+  }
+  /* footer */
+  .disclaimer{
+    width: 400px;
+  }
+  .darkblue .logo{
+    width: 6em;
+  }
+  .icon-container i{
+    margin: auto 4px;
+    
+  }
+  .link-list ul li a{
+    font-size: 10px;
+  }
+}
+
+@media(max-width:420px){
+
+  /* footer */
+  .disclaimer{
+    font-size: 1rem;
+
+  }
+ }
+
+  

@@ -8,8 +8,18 @@ body{
   padding: 0;
 }
 /* header設定 */
+/* menu */
+.menu-container{
+  display: none;
+}
+#menu-icon{
+  color: #262F7E;
+  padding-right: 20px;
+  font-size: 2.2rem;
+
+}
 header{
-  width: 1100px;
+  width: 90%;
   background-color: #ECF2F7;
   border: none;
   border-radius: 40px;
@@ -20,6 +30,19 @@ header{
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
+  z-index: 2;
+}
+
+.navbar-container{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+
+ 
+}
+.logo-container2{
+  display: none;
 }
 .logo-container{
   cursor: pointer;
@@ -40,14 +63,15 @@ header{
 .navbar ul li a{
   color: black;
   font-weight: 600;
-  font-size: 18px;
-  margin:0 14px;
+  font-size: 1.2rem;
+  margin:0 .6em;
   text-decoration: none;
+  line-height: 1.6;
 }
 .navbar ul li a:hover{
   background-color: #1048D8;
   color: white;
-  padding: 7px 14px;
+  padding: .2em .6em;
   margin: 0;
   border-radius: 20px;
 
@@ -55,20 +79,17 @@ header{
 
 .activity ul li a{
   color: black;
-  margin: 0 10px;
+  margin: 0 .5em;
   text-decoration: none;
+  font-size: 1.2rem;
  }
  .activity ul li a:hover{
   text-decoration: underline;
  }
-
- .bold{
-  font-weight: bold;
- }
 /* main */
 .step-container{
-  width: 600px;
-  margin: 10px auto;
+  width: 60%;
+  margin: .6em auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -78,15 +99,15 @@ header{
 }
 .circle{
   display: flex;
-  width: 60px;
-  height: 60px;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   background-color: #1048D8;
   text-align: center;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 36px;
+  font-size: 2rem;
 }
 .current-step{
   background-color: #262F7E;
@@ -109,6 +130,18 @@ header{
   z-index: -1;
   transform: translateY(-50%);
 }
+/* 數量 */
+.amount{
+  background-color: white;
+  border-radius: 8px;
+  padding: 1px 2px;
+  border: 2px solid;
+  border-color: rgb(26, 72, 113);
+  color:rgb(26, 72, 113);
+  font-size: .8rem;
+  margin-right: 10px;
+
+}
 /* 購物車商品 */
 .checkbox{
   scale: 1.3;
@@ -118,7 +151,7 @@ header{
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 1200px;
+  width: 90%;
   margin: 10px auto;
   justify-content: space-between;
 
@@ -139,7 +172,7 @@ header{
   justify-content: center;
 }
 .description-container{
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -148,7 +181,7 @@ header{
 }
 /* 商品格 */
 .item-container{
-  width: 1200px;
+  width: 90%;
   height: 200px;
   display: flex;
   flex-direction: row;
@@ -160,9 +193,9 @@ header{
 
 }
 
-.item-container img{
-  width: 150px;
-  height: 100px;
+.check-container img{
+  width: 130px;
+  height: 6rem;
 }
 .item-container select{
   height: 25px;
@@ -172,20 +205,37 @@ header{
 }
 .container-end{
   margin-right: 3%;
+  cursor: pointer;
 }
+
 /* 分隔線 */
 .divider{
-  width: 1200px;
+  width: 85%;
   height: 2px;
   background-color: gray;
   margin: 60px auto;
 }
 /* 購買人資料 */
+/* 選項 */
+.purchase-information input,.price-container input{
+  border-color: rgb(26, 72, 113);
+  color:rgb(26, 72, 113);
+}
+.purchase-information select,.purchase-information option{
+  background-color: white;
+  border-radius: 8px;
+  padding: 1px 2px;
+  border: 2px solid;
+  border-color: rgb(26, 72, 113);
+  color:rgb(26, 72, 113);
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
 
 .purchase-container{
   display: flex;
   flex-direction: row;
-  width: 1200px;
+  width: 90%;
   margin: 20px auto;
   justify-content: space-evenly;
   font-size: 18px;
@@ -195,7 +245,7 @@ header{
 .purchase-information{
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 40%;
 }
 .purchase-container input, .purchase-information select{
   height: 30px;
@@ -203,19 +253,31 @@ header{
 
 
 }
+
 /* 直的分隔線 */
 .vertical-divider{
-  height: 360px;
+  height: 17rem;
   width: 2px;
   background-color: gray;
   margin-top: -60px;
 }
+/* price-container */
+.price-container{
+
+  width: 40%;
+}
+.price-container h4{
+  font-size: 1rem;
+} 
+.price-container label{
+  font-size: 1rem;
+}
 .buy-button{
   display: block;
-  padding: 10px 20px;
+  padding: .4em 1em;
   margin-top: 30px; 
   color: white;
-  font-size: 20px;
+  font-size: 1rem;
   background-color: #1048D8;
   border: none;
   cursor: pointer;
@@ -224,10 +286,296 @@ header{
   background-color: #262F7E;
 }
 /* footer */
-  footer{
-    width: 1200px;
-    margin: 0 auto;
-    background-color: #262F7E;
-    color: white;
-    padding: 6px 25px;
+.footer{
+  margin: 0 auto;
+  background-color: #262F7E;
+  width: 90%;
+  color: white;
+}
+.darkblue{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+
+
+}
+.darkblue .logo{
+  width: 200px;
+
+
+}
+.darkblue .inner-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.darkblue .icon-container{
+  text-wrap: nowrap;
+  margin-left: 20px;
+}
+.icon-container i{
+  color: white;
+  margin: auto 10px;
+  cursor: pointer;
+}
+/* 超連結及圖片 */
+.bold{
+  font-weight: bold;
+  
+}
+
+
+.link-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 120px;
+  color: white;
+  
+
+}
+
+
+
+.link-list ul li{
+  margin-bottom: 15px;
+  list-style-type: none;
+
+  
+}
+.link-list ul li a{
+  text-decoration: none;
+  color: white;
+  
+  text-wrap: nowrap;
+}
+.link-list ul li a:hover{
+  text-decoration:underline;
+}
+
+.disclaimer{
+  padding: .3em .5em;
+}
+
+/* 響應式 */
+
+
+@media (max-width:1000px){
+  /* header */
+  header{
+    padding:.1em .4em;
   }
+
+  /* link list */
+
+  .link-list ul{
+    margin-left: 0;
+  }
+  .link-list-container{
+    position: absolute;
+    top: 120px;
+    font-size: 1.2rem;
+
+  }
+  .darkblue .inner-container{
+    padding-bottom: 220px;
+    position: relative;
+  }
+ 
+}
+@media(max-width:960px){
+
+  /* navbar */
+  
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+  .logo{
+    width: 160px;
+    padding-top: 2em;
+  }
+  .navbar-container{
+    flex-direction: column;
+  }
+  .navbar ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar ul li:hover a{
+    color: white;
+  }
+  
+  
+
+
+  /* footer link */
+  .link-list{
+    position: absolute;
+  }
+}
+@media (max-width: 740px){
+
+  /* navbar */
+  body{
+    position: relative;
+  }
+  
+  header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    height:5em;
+
+    
+  }
+  .menu-container{
+    display: block;
+  }
+  .navbar-container{
+    transform: translateX(-600px);
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 600px;
+    background-color:#262F7E;
+    z-index: 1;
+    padding-top: 0;
+    transition:all 500ms ease-in-out;
+    
+ 
+  }
+  /* logo */
+
+  .logo-container{
+    padding-bottom: 1.2em;
+  }
+  
+  .logo-container2{
+    display: block;
+    display: flex;
+    margin: 0 auto;
+  }
+  .logo{
+    padding-left: 2em;
+  }
+  .navbar{
+
+    padding-left: -30px;
+
+  }
+
+  .navbar ul li a{
+    color: white;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  .navbar ul li:hover{
+    width: auto;
+  }
+
+  .navbar ul li:hover a{
+    color: white;
+  }
+  /* activity */
+  .activity ul li a{
+    color: white;
+  }
+  .activity{
+
+    display: flex;
+    margin: 0 auto;
+
+  }
+
+/* logo大小 */
+  .logo{
+    width: 100px;
+  }
+  /* main */
+  main{
+    margin-top: 160px;
+  }
+/* 商品頁 */
+#checkall{
+  display: none;
+}
+.checkbox{
+  scale: 1;
+}
+.check-container .image{
+  width: 80px;
+  height: 40px;
+  overflow: hidden;
+
+}
+.description-container h4{
+  font-size: 12px;
+
+}
+.item-container{
+  height: 140px;
+}
+.item-container h4{
+font-size: 10px;
+}
+.single-price{
+  text-wrap: nowrap;
+}
+/* footer */
+ /* icon container */
+ .icon-container i{
+  margin: auto 4px;
+  
+
+}
+  
+ }
+ 
+ @media(max-width:480px){
+  /* header */
+  header{
+    width: 90%;
+  }
+
+
+  .navbar-container{
+    width: 60%;
+  }
+  /* footer */
+  .disclaimer{
+    width: 400px;
+  }
+  .darkblue .logo{
+    width: 6em;
+  }
+  .icon-container i{
+    margin: auto 4px;
+    
+  }
+  .link-list ul li a{
+    font-size: 10px;
+  }
+}
+
+@media(max-width:420px){
+
+  /* footer */
+  .disclaimer{
+    font-size: 1rem;
+
+  }
+ }
+
+  

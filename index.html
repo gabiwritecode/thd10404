@@ -13,9 +13,8 @@
 </head>
 <body>
   <header>
-    
+    <!-- 大header -->
     <div class="container">
-      
       <!-- 上方按鈕跟Logo -->
       <div class="upperHeader">
         <img class="logo" src="logo/logo horizontal.svg" alt="">
@@ -29,18 +28,19 @@
           </ul>
         </div>
         <div class="activity">
-          <ul>
-            <li><a href="shopping cart.html">購物車</a></li>
-            <li><a href="login.html">註冊/登入</a></li>
-          </ul>
+            <ul>
+              <li><a href="shopping cart.html">購物車</a></li>
+              <li><a href="login.html">註冊/登入</a></li>
+            </ul>
         </div>
       </div>
       <!-- 下方文字跟按鈕 -->
       <div class="header-content">
         <h1 class="header-title">UNA NOCHE EN MADRID</h1>
         <h2 class="header-subtitle">最全面的馬德里旅遊指南</h2>
-        <button class="btn">了解更多</button>
+        <button class="btn header-btn">了解更多</button>
       </div>
+      <div class="menu-container"> <i class="fa-solid fa-bars" id="menu-icon"></i></div>
     </div>
   </header>
   <main>
@@ -56,7 +56,7 @@
             <p>馬德里最佳飯店前十名!</p>
          </a>
         </div>
-        <div class="recommend-item">
+        <div class="recommend-item active">
           <a href="restaurant.html">
             <img src="image/recommend list/restaurant.jpg" alt="">
             <h3>餐廳推薦</h3>
@@ -72,6 +72,78 @@
         </div>
       </div>
     </div>
+    <!-- 天氣卡片列 -->
+    <div class="cards">
+      <div class="card">
+        <div class="weather">
+          <img src="./weather app/weather-app-img/images/rain.png" alt="" class="js-weather-icon js-weather-icon1">
+          <h1 class="temp temp1">22°C</h1>
+          <h2 class="city city1">Toledo</h2>
+          <div class="details">
+            <div class="col">
+              <img src="./weather app/weather-app-img/images/humidity.png" class="weather-icon">
+              <div>
+                <p class="humidity humidity1">50%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="./weather app/weather-app-img/images/wind.png" class="weather-icon">
+              <div>
+                <p class="wind wind1">15 km/h</p>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="weather">
+          <img src="./weather app/weather-app-img/images/rain.png" alt="" class="js-weather-icon js-weather-icon2">
+          <h1 class="temp temp2">22°C</h1>
+          <h2 class="city city2">Madrid</h2>
+          <div class="details">
+            <div class="col">
+              <img src="./weather app/weather-app-img/images/humidity.png" class="weather-icon">
+              <div>
+                <p class="humidity humidity2">50%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="./weather app/weather-app-img/images/wind.png" class="weather-icon">
+              <div>
+                <p class="wind wind2">15 km/h</p>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="weather">
+          <img src="./weather app/weather-app-img/images/rain.png" alt="" class="js-weather-icon js-weather-icon3">
+          <h1 class="temp temp3">22°C</h1>
+          <h2 class="city city3">Segovia</h2>
+          <div class="details">
+            <div class="col">
+              <img src="./weather app/weather-app-img/images/humidity.png" class="weather-icon">
+              <div>
+                <p class="humidity humidity3">50%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="./weather app/weather-app-img/images/wind.png" class="weather-icon">
+              <div>
+                <p class="wind wind3">15 km/h</p>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- 熱門景點 -->
     <div class="popular-location-container">
       <div class="lightblue">
@@ -82,50 +154,50 @@
         </div>
         <img src="image/popular/popular.avif" alt="">
       </div>
-      <div class="darkblue">
-        <img class="logo" src="logo/white logo.svg" alt="">
-        <div class="icon-container">
-          <h3>contact us:</h3>
-          <div class="icon">
-            <i class="fa-brands fa-facebook fa-xl"></i>
-            <i class="fa-brands fa-instagram fa-xl"></i>
-            <i class="fa-brands fa-square-x-twitter fa-xl"></i>
-            <i class="fa-brands fa-tiktok fa-xl"></i>
-         </div>
-        </div>
-      </div>
-    </div>
-    <div class="link-list-container">
-      
-      <img src="image/index down/index down.avif" alt="">
-      <div class="link-list">
-      <ul>
-        <li class="bold">關於</li>
-        <li><a href="">關於我們</a></li>
-        <li><a href="">最新消息</a></li>
-        <li><a href="">FAQ</a></li>
-      </ul>
-      <ul>
-        <li class="bold">購買</li>
-        <li><a href="">購物頁面</a></li>
-        <li><a href="">購物車</a></li>
-        <li><a href="">退換貨說明</a></li>
-      </ul>
-      <ul>
-        <li class="bold">支援</li>
-        <li><a href="">帳號管理</a></li>
-        <li><a href="">會員中心</a></li>
-        <li><a href="">聯絡我們</a></li>
-      </ul>
-    </div>
      
-
-
     </div>
   </main>
-  <footer>
-    <h3>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</h3>
+    <div class="footer">
+      <div class="darkblue">
+        <div class="inner-container">
+          <img class="logo" src="logo/white logo.svg"  alt="">
+          <div class="link-list-container">
+            <div class="link-list">
+              <ul>
+                <li class="bold">關於</li>
+                <li><a href="">關於我們</a></li>
+                <li><a href="">最新消息</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+              <ul>
+                <li class="bold">購買</li>
+                <li><a href="">購物頁面</a></li>
+                <li><a href="">購物車</a></li>
+                <li><a href="">退換貨說明</a></li>
+              </ul>
+              <ul>
+                <li class="bold">支援</li>
+                <li><a href="">帳號管理</a></li>
+                <li><a href="">會員中心</a></li>
+                <li><a href="">聯絡我們</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="icon-container">
+            <h3>contact us:</h3>
+            <div class="icon">
+              <i class="fa-brands fa-facebook fa-xl"></i>
+              <i class="fa-brands fa-instagram fa-xl"></i>
+              <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+              <i class="fa-brands fa-tiktok fa-xl"></i>
+          </div>
+          </div>
+      </div>
+      </div>
+     
+    <h3 class="disclaimer">本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</h3>
   </footer>
   <script src="https://kit.fontawesome.com/185f0599f8.js" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
