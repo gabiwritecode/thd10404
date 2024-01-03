@@ -745,8 +745,13 @@ header{
     /* footer */
     .disclaimer{
       font-size: 1rem;
+      margin-top: -200px;
 
     }
+    .link-list{
+      display: none;
+    }
+  
    }
 
     
