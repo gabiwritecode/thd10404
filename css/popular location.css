@@ -422,6 +422,10 @@ line-height: 1;
 }
 
 @media(max-width:420px){
+  /* main */
+  .location-picture{
+    scale: 1.2;
+  }
 
   /* footer */
   .disclaimer{

@@ -606,6 +606,11 @@ i{
   .upperHeader{
     width: 80%;
   }
+  /* 漢堡 */
+  .menu-container{
+    z-index: 10;
+  }
+  
   /* 推薦列表 */
   .recommend-list{
     justify-content: space-between;
