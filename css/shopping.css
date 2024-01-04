@@ -453,7 +453,7 @@ header{
    /* 商品大小 */
    .shopping-item-container{
     width: 130px;
-    height: 190px;
+    height: 200px;
 
     margin-bottom: 10px;
   }
@@ -461,11 +461,11 @@ header{
     height: 100px;
   }
   .shopping-item-container h3{
-    font-size: .4rem;
+    font-size: .3rem;
 
   }
   .shopping-item-container p{
-    font-size: .4rem;
+    font-size: .3rem;
   }
   .shopping-item-container button{
     font-size: .3rem;
