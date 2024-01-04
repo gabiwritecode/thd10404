@@ -28,7 +28,7 @@ checkAll.addEventListener('click',function(){
 // 給小框添加點擊事件
 for(let i = 0;i<cks.length;i++){
   cks[i].addEventListener('click',function(){
-    checkAll.checked = document.querySelector('.ck:checked').length = cks.length
+    checkAll.checked = document.querySelector('.ck:checked').length === cks.length
   })
 }
 
